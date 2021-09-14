@@ -1,0 +1,60 @@
+// Fonts
+
+@font-face {
+	font-family: 'cantique';
+	src: url('../fonts/cantique.woff2') format('woff2'),
+		url('../fonts/cantique.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'cantiqueb';
+	src: url('../fonts/cantiqueb.woff2') format('woff2'),
+		url('../fonts/cantiqueb.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'cantiquebi';
+	src: url('../fonts/cantiquebi.woff2') format('woff2'),
+		url('../fonts/cantiquebi.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'acpro';
+	src: url('../fonts/acpro.woff2') format('woff2'),
+		url('../fonts/acpro.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'acprob';
+	src: url('../fonts/acprob.woff2') format('woff2'),
+		url('../fonts/acprob.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'acprobi';
+	src: url('../fonts/acprobi.woff2') format('woff2'),
+		url('../fonts/acprobi.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+.intro__text {
+	font-family: $cabi;
+	margin-top: 2rem;
+	padding: 0 2rem;
+	text-align: center;
+	line-height: 1.6;
+	font-size: 3rem;
+	color: $text;
+	text-shadow: 1px 1px 3px #999;
+}

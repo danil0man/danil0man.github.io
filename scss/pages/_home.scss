@@ -1,0 +1,145 @@
+.empire {
+	min-height: 100vh;
+	background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6)
+		),
+		url(../img/altdorf.png);
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	&__content {
+		max-width: 150rem;
+		display: flex;
+		// justify-content: space-evenly;
+	}
+
+	&__box {
+		max-width: 35rem;
+		background: rgba($card-bg, 0.6);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		margin: 0 10rem;
+		padding: 3rem 2rem;
+		border-radius: 3rem;
+		box-shadow: 0px 10px 20px black;
+	}
+
+	&__text {
+		font-family: $cabi;
+		padding: 1rem;
+		text-align: center;
+		line-height: 1.6;
+		font-size: 2.2rem;
+		color: $text;
+		text-shadow: 1px 1px 3px #999;
+
+		&--second {
+			margin-top: 2rem;
+		}
+	}
+
+	&__image {
+		width: 30rem;
+		height: auto;
+		border-radius: 10px 10px 0;
+	}
+
+	&__sigmar {
+		border-radius: 10px;
+	}
+}
+
+.war {
+	min-height: 100vh;
+	background: linear-gradient(
+			0deg,
+			rgba($card-bg, 0.8),
+			rgba($card-bg, 0.8)
+		),
+		url(../img/war.jpg);
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__heading {
+		text-align: center;
+		font-family: $cabi;
+		padding: 0 2rem;
+		text-align: center;
+		line-height: 1.4;
+		font-size: 3.2rem;
+		color: $text;
+		text-shadow: 1px 1px 3px #999;
+
+		&--special:hover {
+			transform: scale(1.2);
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-evenly;
+		max-width: 160rem;
+		padding: 1rem;
+		flex-wrap: wrap;
+		margin-bottom: 4rem;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 2rem;
+		min-height: 52rem;
+	}
+
+	&__title {
+		font-family: $acb;
+		margin-top: 4rem;
+		font-size: 3rem;
+		text-transform: uppercase;
+		color: $secondary;
+		text-shadow: 0 4px 4px $card-bg;
+	}
+
+	&__image {
+		width: 35rem;
+		border-radius: 3rem;
+		transition: all 1s;
+		z-index: 3;
+		border: 4px solid transparent;
+
+		&:hover {
+			transform: translateY(-9rem) scale(0.5);
+			border: 4px solid $card-bg;
+		}
+	}
+
+	&__text {
+		text-align: center;
+		font-family: $cabi;
+		padding: 0 2rem;
+		max-width: 35rem;
+		text-align: center;
+		line-height: 1.4;
+		font-size: 2.8rem;
+		color: $text;
+		text-shadow: 1px 1px 3px #999;
+		margin-top: -18rem;
+
+		&--long {
+			line-height: 1.1;
+		}
+	}
+}

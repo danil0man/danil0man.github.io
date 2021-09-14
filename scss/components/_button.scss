@@ -1,0 +1,13 @@
+.btn {
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 400rem;
+	margin-bottom: 5rem;
+	text-decoration: none;
+	display: inline-block;
+	transition: all 3s;
+
+	&:hover {
+		color: $secondary;
+	}
+}

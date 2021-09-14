@@ -1,0 +1,82 @@
+.nav {
+	background-color: $background;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	box-shadow: black 0px 2px 2rem;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 0 2rem;
+	}
+
+	&__logo {
+		width: 10rem;
+	}
+
+	&__menu {
+		background-color: transparent;
+		border: 1px solid $text;
+		border-radius: 5px;
+		padding: 3px 7px;
+		cursor: pointer;
+		transition: all 0.5s;
+	}
+
+	&__bar {
+		width: 2rem;
+		height: 2px;
+		background-color: $text;
+		margin: 0.7rem 0;
+		transition: all 0.5s;
+		display: block;
+	}
+
+	&__list {
+		width: 100%;
+		list-style: none;
+		font-size: 3rem;
+	}
+
+	&__items {
+		padding: 1rem 2rem;
+		border-bottom: 1px solid $border;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	&__items a {
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $secondary;
+		transition: color 0.3s;
+		font-family: $can;
+
+		&:hover {
+			color: $text;
+		}
+	}
+}
+
+.accordion.active {
+	border: 1px solid $secondary;
+}
+
+.accordion.active .nav__bar {
+	background-color: $secondary;
+}
+
+.active {
+	border-bottom: 2px solid $secondary;
+	transition: all 0.3s;
+
+	&:hover {
+		border-bottom: 2px solid $text;
+	}
+}
